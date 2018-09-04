@@ -44,7 +44,7 @@ class FaceDetector(object):
         # 顔の数を表示する
         img = np.zeros((512,512,3), np.uint8)
         font = cv2.FONT_HERSHEY_SIMPLEX
-        cv2.putText(img,len(faces),(10,500), font, 4,(255,255,255),2,cv2.LINE_AA)
+        cv2.putText(img,str(len(faces)),(10,500), font, 4,(255,255,255),2,cv2.LINE_AA)
 
         # frameを戻り値として返す
         return frame
